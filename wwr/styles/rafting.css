@@ -5,8 +5,6 @@
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -32,11 +30,6 @@ footer {
     margin: 0 auto;
 }
 
-.socialmedia {
-    width: 100px;
-    height: 100px;
-}
-
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -47,6 +40,7 @@ nav,
 p,
 section,
 article {
+    top: 50px;
     margin: 16px;
     padding: 8px;
 }
