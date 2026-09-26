@@ -76,7 +76,7 @@ h1 {
 
 article {
     position: absolute;
-    color: var(--accent2-color)
+    color: var(--secondary-color)
 }
 
 .hero article img {
