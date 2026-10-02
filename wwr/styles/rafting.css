@@ -1,15 +1,11 @@
 :root {
 
     --primary-color: #005a05;
-    /*U*/
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    /*U*/
     --heading-font: "Times New Roman", "Georgia", serif;
-    /*U*/
     --body-font: Arial, Helvetica, sans-serif;
-    /*U*/
 }
 
 * {
@@ -28,6 +24,21 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+header ul {
+    display: grid;
+    list-style: none;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
 }
 
 h1,
