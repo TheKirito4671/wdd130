@@ -1,7 +1,6 @@
 :root {
     --primary-color: #005a05;
-    /* Adjusted --secondary-color from #f4a261 to #b85b14 to satisfy WCAG AA contrast ratio standards against white backgrounds */
-    --secondary-color: #b85b14;
+    --secondary-color: #9c4a00;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -26,7 +25,7 @@ footer {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* ---------------- HEADER ---------------- */
 
 header {
     display: grid;
@@ -64,7 +63,7 @@ header a {
     font-size: 12px;
 }
 
-/* HERO */
+/* ---------------- HERO ---------------- */
 
 .hero {
     position: relative;
@@ -95,7 +94,7 @@ header a {
     color: var(--secondary-color);
 }
 
-/* ARTICLE DO HERO */
+/* ---------------- ARTICLE DO HERO ---------------- */
 
 .hero article {
     position: absolute;
@@ -131,7 +130,7 @@ header a {
     font-size: 10px;
 }
 
-/* SECTIONS */
+/* ---------------- SECTIONS ---------------- */
 
 main > section {
     border: 1px solid #777;
@@ -144,7 +143,7 @@ main > section h2 {
     color: var(--primary-color);
 }
 
-/* HISTORY */
+/* ---------------- HISTORY ---------------- */
 
 main > section:first-of-type {
     min-height: 110px;
@@ -164,18 +163,40 @@ main > section:first-of-type p {
     font-size: 10px;
 }
 
-/* ADVENTURE */
+/* ---------------- ADVENTURE ---------------- */
 
 main > section:last-of-type {
-    min-height: 110px;
+    display: grid;
+
+    grid-template-columns: 1fr 150px 1fr;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 10px;
 }
 
 main > section:last-of-type h2 {
+    grid-column: 1 / 4;
+
     text-align: center;
+
     font-size: 18px;
 }
 
-/* FOOTER */
+main > section:last-of-type img {
+    width: 150px;
+    height: 100px;
+
+    object-fit: cover;
+}
+
+main > section:last-of-type p {
+    font-size: 12px;
+}
+
+/* ---------------- FOOTER ---------------- */
 
 footer {
     background-color: var(--accent2-color);
@@ -194,7 +215,7 @@ footer p {
     color: var(--accent1-color);
 }
 
-/* SOCIAL MEDIA */
+/* ---------------- SOCIAL MEDIA ---------------- */
 
 .socialmedia {
     display: grid;
