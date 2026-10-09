@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description"
+      content="Get in touch with WhiteWater Rafting. Contact us for trip inquiries, bookings, or questions about your next river adventure!">
+    <meta name="author" content="Carlos Adam Souza Monteiro">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/wwrlogo.jpg" alt="WhiteWater Rafting logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Company Name and Contact Details -->
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>100 Main Street, Riggins</p>
+            <p>Rio Salmon, Idaho</p>
+            <p>+1 555 019 2831</p>
+            <p>info@whitewater.com</p>
+        </section>
+
+        <!-- Map and Contact Form Container -->
+        <section class="contact-container">
+            <!-- Location Map -->
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893895.3811747446!2d-117.93781307708069!3d44.90157775180037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358158fba1f72dd%3A0xb0a9f6599feec377!2sRio%20Salmon!5e0!3m2!1spt-BR!2sbr!4v1791512814866!5m2!1spt-BR!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+
+            <!-- Contact Form -->
+            <form action="#" method="post">
+                <div class="form-item">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="username" placeholder="Placeholder">
+                </div>
+
+                <div class="form-item">
+                    <label for="usermail">Email</label>
+                    <input type="email" id="usermail" name="usermail" placeholder="Placeholder">
+                </div>
+
+                <div class="form-item">
+                    <label>Message Purpose</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" id="general" name="purpose" value="general" checked>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type here"></textarea>
+                </div>
+
+                <div class="form-item checkbox-item">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please Subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+        <!-- Employee Profiles Section -->
+        <section class="employees-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-cards">
+                <figure class="employee-card">
+                    <img src="images/wwremployee1.png" alt="Employee Profile 1">
+                    <figcaption>Alex Johnson</figcaption>
+                </figure>
+
+                <figure class="employee-card">
+                    <img src="images/wwremployee2.png" alt="Employee Profile 2">
+                    <figcaption>John Doe</figcaption>
+                </figure>
+
+                <figure class="employee-card">
+                    <img src="images/wwremployee3.png" alt="Employee Profile 3">
+                    <figcaption>Jane Smith</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2026 WhiteWater Rafting | Carlos Adam Souza Monteiro</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com">
+                <img src="images/wwrfacebook.svg" alt="facebook logo">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="images/wwrinstagramsquare.svg" alt="instagram logo">
+            </a>
+            <a href="https://www.x.com">
+                <img src="images/wwrx.svg" alt="x logo">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
