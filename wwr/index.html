@@ -40,50 +40,42 @@
         <!-- PURPOSE & OFFERINGS SECTION (CSS GRID) -->
         <section>
             <h2>Our Purpose & Offerings</h2>
-            <div
-              style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; align-items: center; margin-top: 10px;">
+            <div class="purpose-grid">
                 <div>
-                    <img src="images/rafting1.jpg" alt="Rafting rapids"
-                      style="width: 100%; height: 120px; object-fit: cover; border: 1px solid #777;">
-                    <p style="font-size: 11px; margin-top: 5px;">Guided white water excursions
-                        tailored for all skill levels, ensuring safety and extreme fun.</p>
+                    <img src="images/rafting1.jpg" alt="Rafting rapids">
+                    <p>Guided white water excursions tailored for all skill levels, ensuring safety
+                        and extreme fun.</p>
                 </div>
                 <div>
-                    <img src="images/rafting2.jpg" alt="Calm river rafting"
-                      style="width: 100%; height: 120px; object-fit: cover; border: 1px solid #777;">
-                    <p style="font-size: 11px; margin-top: 5px;">Scenic river floats designed for
-                        families and nature lovers wanting to explore peaceful canyons.</p>
+                    <img src="images/rafting2.jpg" alt="Calm river rafting">
+                    <p>Scenic river floats designed for families and nature lovers wanting to
+                        explore peaceful canyons.</p>
                 </div>
             </div>
         </section>
 
         <!-- CALL TO ACTION (CTA) -->
-        <section style="text-align: center; background-color: var(--accent2-color); padding: 15px;">
-            <h2 style="margin-bottom: 8px;">Ready for an Unforgettable Journey?</h2>
-            <p style="font-size: 12px; margin-bottom: 12px;">Explore our complete schedule of
-                exciting guided trips down the river.</p>
-            <a href="trips.html"
-              style="display: inline-block; padding: 8px 16px; background-color: var(--primary-color); color: white; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 12px;">Book
-                Your Trip Now!</a>
+        <section class="cta-section">
+            <h2>Ready for an Unforgettable Journey?</h2>
+            <p>Explore our complete schedule of exciting guided trips down the river.</p>
+            <a href="trips.html" class="cta-button">Book Your Trip Now!</a>
         </section>
 
         <!-- NEWSLETTER SIGN UP FORM -->
         <section>
             <h2>Stay Connected</h2>
-            <form action="#" method="post" style="margin-top: 10px;">
-                <div class="form-item" style="margin-bottom: 8px;">
+            <form action="#" method="post">
+                <div class="form-item">
                     <label for="newsletter-name">Name</label>
                     <input type="text" id="newsletter-name" name="newsletter-name"
                       placeholder="Your Name" required>
                 </div>
-                <div class="form-item" style="margin-bottom: 8px;">
+                <div class="form-item">
                     <label for="newsletter-email">Email</label>
                     <input type="email" id="newsletter-email" name="newsletter-email"
                       placeholder="your.email@example.com" required>
                 </div>
-                <button type="submit"
-                  style="width: 100%; padding: 8px; font-weight: bold; cursor: pointer;">Subscribe
-                    to Newsletter</button>
+                <button type="submit">Subscribe to Newsletter</button>
             </form>
         </section>
     </main>
