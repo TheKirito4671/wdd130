@@ -422,3 +422,54 @@ main > section.employees-section {
     color: #222;
     text-align: center;
 }
+
+/* ---------------- PURPOSE & OFFERINGS ---------------- */
+
+/* Centers the section title */
+main > section h2 {
+    text-align: center;
+}
+
+/* Transforms the purpose section into a 4-column grid layout */
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Creates 4 equal columns */
+    gap: 20px;
+    align-items: start;
+    margin-top: 10px;
+}
+
+/* Places the first item (first image + text) strictly in column 2 */
+.purpose-grid > div:nth-child(1) {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Places the second item (second image + text) strictly in column 3 */
+.purpose-grid > div:nth-child(2) {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styles and constraints the centered images */
+.purpose-grid img {
+    width: 100%;
+    max-width: 250px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #777;
+}
+
+/* Styles the centered explanatory text paragraphs */
+.purpose-grid p {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
