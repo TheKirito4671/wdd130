@@ -473,3 +473,70 @@ main > section h2 {
     margin-top: 5px;
     text-align: center;
 }
+
+/* ---------------- TRIPS PAGE STYLES ---------------- */
+
+/* Destaques e Grade de Viagens */
+.trips-highlights-section .trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.trip-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #777;
+    margin-bottom: 8px;
+}
+
+.trip-card h3 {
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.trip-card p {
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+/* Tabela de Viagens Disponíveis */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.trips-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    text-align: left;
+}
+
+.trips-table-section th,
+.trips-table-section td {
+    border: 1px solid #777;
+    padding: 6px 8px;
+}
+
+.trips-table-section th {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+}
+
+.trips-table-section tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
